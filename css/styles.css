@@ -1,0 +1,93 @@
+/* Reset do Browser(navegador) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #263138;
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* header - Menu */
+.menu {
+    background-color: #FF9A6C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 80px;
+}
+
+.menu nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 20px;
+}
+
+/* Fixar o menu no topo */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;/* O header ocupa 100% da largura da tela  */
+    z-index: 100; /* Coloca o header acima de outos elementos */
+}
+
+.menu nav a:hover {
+    color: #000000;
+}
+
+/* Config da seção INICIO */
+#inicio{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding:80px 80px 24px 80px ;
+    position: relative;
+}
+
+h1, h2{
+ font-size: 32px;
+ font-weight: 600;
+ margin-top: 23px;
+}
+
+.paragrafo{
+    line-height: 150%;
+    margin-bottom: 64px;
+}
+
+.absolute{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.botao{
+    border-radius: 8px;
+    background-color: #FF9A6C;
+    color: #FFFFFF;
+    padding:16px 32px;
+    text-decoration: none;
+}
+
+.botao-transparente{
+    border-radius: 8px;
+    color: #FF725E;
+    padding:16px 32px;
+    text-underline-offset: 4px;
+}
+
+.absolute{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    z-index: -1
+} 
